@@ -5,7 +5,7 @@ body{
   font-size: 62.5%;
   background-color: #eee;
 }
-.about, .bottom-post p, h2{
+.about, .bottom-post p, h2, h4{
   font-family: Oswald, Helvetica, Arial, sans-serif;
 }
 h2{
@@ -68,7 +68,7 @@ ul, p{
 }
 header{
   background:
-  linear-gradient( rgba(43, 119, 176, .5), rgba(43, 119, 176, .5) ),
+  linear-gradient( rgba(0, 88, 152, .8), rgba(0, 88, 152, .8) ),
   url(images/header-bg-1-bw.jpg) no-repeat top center;
   height: 523px;
   background-size: cover;
@@ -230,6 +230,60 @@ article p{
 aside{
   width: 27.308447937%;
 }
+.author-info{
+  margin: 0 auto;
+  text-align: center;
+}
+.author-info img{
+  width: 100px;
+}
+.author-info h3{
+  /*position: relative;*/
+  font-size: 20px;
+  margin: 0;
+  color: rgba(17, 109, 179, 1);
+}
+/*.author-info h3:before{
+  background: url(images/author-pic.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  content: " ";
+  position: absolute;
+  top: -110px;
+  display: inline-block;
+}*/
+.author-info ul{
+  margin: 0 auto;
+}
+.author-info li{
+  display: inline-block;
+
+}
+.author-info li:not(:last-child){
+  margin-right: 10px;
+}
+.author-info li a{
+    color: rgba(164, 179, 191, 1);
+    font-size: 12px;
+}
+.advertisement{
+  margin-top: 40px;
+}
+.ad-link{
+  float: right;
+}
+.sidebar-section{
+  margin-top: 40px;
+}
+.sidebar h4{
+  font-size: 20px;
+  color: rgba(10, 110, 179, 1);
+}
+.sidebar p{
+  color: rgba(164, 179, 191, 1);
+  font-size: 12px;
+}
 footer{
   width: 100%;
   margin-top: 30px;
@@ -271,19 +325,19 @@ footer h2{
   color: white;
 }
 .post-1{
-  background: linear-gradient( rgba(43, 119, 176, .75), rgba(43, 119, 176, .75)),
+  background: linear-gradient( rgba(0, 88, 152, .8), rgba(0, 88, 152, .8)),
   url(images/footer-bg-1-bw.jpg);
 }
 .post-2{
-  background: linear-gradient( rgba(43, 119, 176, .75), rgba(43, 119, 176, .75)),
+  background: linear-gradient( rgba(0, 88, 152, .8), rgba(0, 88, 152, .8)),
   url(images/footer-bg-2-bw.jpg);
 }
 .post-3{
-  background: linear-gradient( rgba(43, 119, 176, .75), rgba(43, 119, 176, .75)),
+  background: linear-gradient( rgba(0, 88, 152, .8), rgba(0, 88, 152, .8)),
   url(images/footer-bg-3-bw.jpg);
 }
 .post-4{
-  background: linear-gradient( rgba(43, 119, 176, .75), rgba(43, 119, 176, .75)),
+  background: linear-gradient( rgba(0, 88, 152, .8), rgba(0, 88, 152, .8)),
   url(images/footer-bg-4-bw.jpg);
 }
 .post-1:hover{
@@ -304,16 +358,18 @@ footer h2{
 }
 .copyright{
   position: relative;
-  margin-left: 22px;
+  margin-left: 50px;
 }
 .copyright:before{
   background: url(images/tiy-icon.png);
   background-size: cover;
-  width: 20px;
-  height: 20px
+  width: 40px;
+  height: 40px;
   content: " ";
   position: absolute;
-  left: -22px;
+  top: 15px;
+  left: -45px;
+  display: inline-block;
 }
 
 .bottom-nav li{
