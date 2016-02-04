@@ -9,9 +9,9 @@ body{
   font-family: Oswald, Helvetica, Arial, sans-serif;
 }
 h2{
-  font-size: 50px;
+  font-size: 63px;
   color: rgba(7, 53, 81, 1);
-  line-height: 1em;
+  line-height: 70px;
 }
 .clearfix{
   overflow: auto;
@@ -35,13 +35,18 @@ a:visited{
   text-decoration: underline;
   color: rgba(221, 226, 231, 1);
 }
+p + blockquote{
+
+}
 blockquote{
-  margin: 0px 0px 15px 0px;
-  padding: 10px 0px 10px 20px;
+  margin: -4px 0px 27px 7px;
+  padding: 17px 0px 11px 16px;
   color: rgba(0, 97, 174, 1);
   font-size: 28px;
   text-transform: uppercase;
   border-left: 1px solid rgba(120, 128, 133, 1);
+  line-height: 28px;
+  letter-spacing: -.6px;
 }
 li{
 
@@ -67,16 +72,29 @@ ul, p{
   background-color: #fff;
 }
 header{
-  background:
-  linear-gradient( rgba(0, 88, 152, .8), rgba(0, 88, 152, .8) ),
-  url(images/header-bg-1-bw.jpg) no-repeat top center;
+  background: url(images/header-bg-1-bw.jpg) no-repeat top center;
+  position: relative;
   height: 523px;
   background-size: cover;
   transition: 3s;
   -webkit-transition: 3s;
   -moz-transition: 3s;
 }
-
+.overlay{
+  background-color: rgba(0, 88, 152, .8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease-in-out;
+}
+header:hover .overlay{
+  background-color: rgba(0, 88, 152, .25);
+}
+.header-container{
+  position: relative;
+}
 .header-container, .content-container, .footer-container{
   max-width: 1018px;
   margin: 0 auto;
@@ -132,11 +150,11 @@ nav li{
 }
 .title-block{
   text-align: center;
-  padding-top: 151px;
+  padding-top: 150px;
 }
 .title-block h1{
   font-family: font-family: Open Sans, Helvetica, Arial, sans-serif;
-  font-size: 10.75em;
+  font-size: 105px;
   line-height: 1em;
   text-shadow: 0px 3px rgba(0, 0, 0, 0.05);
   letter-spacing: -.038em;
@@ -153,7 +171,7 @@ nav li{
   color: rgba(0,0,0, .75);
 }
 .content-container{
-  padding-top: 20px;
+  padding-top: 63px;
 }
 content{
   color: rgba(120, 128, 133, 1);
@@ -164,7 +182,8 @@ article, aside{
 }
 article{
   width: 60.510805501%;
-  margin-right: 8.0550098232%;
+  margin-right: 7.8%;
+  margin-left: 2.1%;
 }
 .article-title-block{
   margin-bottom: 15px;
@@ -172,19 +191,24 @@ article{
 .article-title{
   margin:0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 .article-meta{
-  line-height: 18px;
+  line-height: 25px;
   vertical-align: middle;
   color: rgba(221, 226, 231, 1);
+  font-size: 13px;
 }
 .article-title-author{
-  margin-left: 25px;
-  margin-right: 15px;
+  margin-left: 28px;
+  margin-right: 11px;
   position: relative;
   color: rgba(50, 121, 184, 1);
   font-weight: bold;
+  font-size: 13px;
+  line-height: 25px;
+  padding-left: 6px;
+  letter-spacing: -.16px;
 }
 .article-title-author:before{
   background: url(images/author-pic.png) no-repeat center center;
@@ -192,30 +216,41 @@ article{
   content: " ";
   position: absolute;
   left: -25px;
-  height: 18px;
-  width: 18px;
+  height: 22px;
+  width: 22px;
+}
+.article-content{
+  margin-top: 31px;
 }
 article p{
-  margin-bottom: 15px;
-  font-size: 12px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 26px;
+}
+.article-footer ul{
+  margin-left: 3px;
+  margin-top: -4px;
 }
 .article-footer li{
   display: inline-block;
-  margin-right: 7px;
+  margin-right: 8px;
   background-color: rgba(164, 179, 191, 1);
-  line-height: 24px;
+  line-height: 30px;
   vertical-align: middle;
   color: white;
-  padding-right: 5px;
+  padding-right: 12px;
+  font-size: 12px;
+  letter-spacing: .6px;
 }
 .article-footer li::before{
-  width: 24px;
-  height: 24px;
+  width: 33px;
+  height: 31px;
   background-color: rgba(94, 104, 111, 1);
   font-family: FontAwesome;
+  font-size: 16px;
   display: inline-block;
   text-align: center;
-  margin-right: 5px;
+  margin-right: 12px;
 }
 .article-footer li:hover{
   background-color: rgba(17, 109, 179, 1);
@@ -235,13 +270,17 @@ aside{
   text-align: center;
 }
 .author-info img{
-  width: 100px;
+  width: 84px;
+  margin-top: 20px;
+  margin-left:  2px;
 }
 .author-info h3{
   /*position: relative;*/
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
   color: rgba(17, 109, 179, 1);
+  line-height: 20px;
+  margin-top: 9px;
 }
 /*.author-info h3:before{
   background: url(images/author-pic.png);
@@ -255,38 +294,55 @@ aside{
 }*/
 .author-info ul{
   margin: 0 auto;
+  margin-top: 1px;
 }
 .author-info li{
   display: inline-block;
+  letter-spacing: .3px;
 
 }
-.author-info li:not(:last-child){
-  margin-right: 10px;
+.author-info li:first-child{
+  margin-right: 14px;
+}
+.author-info li:nth-child(2){
+  margin-right: 15px;
+}
+li.read-later {
+    padding-right: 16px;
+}
+li.share-this-post {
+    padding-left: 1px;
 }
 .author-info li a{
     color: rgba(164, 179, 191, 1);
-    font-size: 12px;
+    font-size: 13px;
 }
 .advertisement{
-  margin-top: 40px;
+  margin-top: 52px;
 }
 .ad-link{
   float: right;
+  font-size: 13px;
+  margin-top: 2px;
+  margin-right: 1px;
 }
 .sidebar-section{
-  margin-top: 40px;
+  margin-top: 64px;
 }
 .sidebar h4{
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 5px;
   color: rgba(10, 110, 179, 1);
 }
 .sidebar p{
   color: rgba(164, 179, 191, 1);
-  font-size: 12px;
+  font-size: 13px;
+  line-height: 24px;
 }
 footer{
   width: 100%;
-  margin-top: 30px;
+  margin-top: 66px;
   border-top: 1px solid #cacaca;
 }
 
@@ -300,8 +356,11 @@ footer{
 }
 footer h2{
   text-align: center;
-  font-size: 50px;
+  font-size: 63px;
   color: rgba(7, 53, 81, 1);
+  margin-top: 36px;
+  margin-left: -7px;
+  margin-bottom: 41px;
 }
 .bottom-post{
   width: 25%;
@@ -315,10 +374,11 @@ footer h2{
 .bottom-post p{
   position: absolute;
   float: left;
-  margin-left: 20px;
+  margin-left: 18px;
   width: 75%;
-  bottom: 20px;
-  font-size: 28px;
+  bottom: 14px;
+  font-size: 29px;
+  line-height: 36px;
   color: rgba(8, 50, 79, 1);
 }
 .bottom-post:hover p{
@@ -358,20 +418,29 @@ footer h2{
 }
 .copyright{
   position: relative;
-  margin-left: 50px;
+  margin-left: 82px;
+  line-height: 95px;
+  font-size: 14px;
+  letter-spacing: -.35px;
 }
 .copyright:before{
   background: url(images/tiy-icon.png);
   background-size: cover;
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
   content: " ";
   position: absolute;
-  top: 15px;
-  left: -45px;
+  top: 18px;
+  left: -61px;
   display: inline-block;
 }
+.bottom-nav ul{
+  margin-right: 22px;
+  margin-top: 8px;
+  font-size: 13px;
+  letter-spacing: -.1px;
 
+}
 .bottom-nav li{
   margin: 0px 0px 0px 5px;
 }
