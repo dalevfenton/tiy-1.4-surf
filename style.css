@@ -38,6 +38,28 @@ a:visited{
 .rollover a{
   color: rgba(73, 149, 202, 1);
 }
+.rollover{
+  transition: .25s ease-in-out;
+  position: relative;
+}
+.rollover-hidden{
+  display: none;
+  position: absolute;
+  transition: .25s ease-in-out;
+  background-color: rgba(217, 217, 217, 1);
+  top: 40px;
+  left: 0px;
+  padding: 10px;
+}
+.rollover:hover .rollover-hidden{
+  display: inline-block;
+  border-radius: 5px;
+}
+.rollover:hover{
+  padding: 5px;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 5px;
+}
 blockquote{
   margin: -4px 0px 27px 7px;
   padding: 17px 0px 11px 16px;
@@ -87,7 +109,7 @@ header{
   transition: .5s ease-in-out;
 }
 header:hover .overlay{
-  background-color: rgba(0, 88, 152, .25);
+  background-color: rgba(0, 88, 152, .9);
 }
 .header-container{
   position: relative;
@@ -138,6 +160,15 @@ nav{
 nav li{
   display: inline-block;
   margin-left: 15px;
+}
+.blog-id, nav li{
+    transition: .25s ease-in-out;
+}
+
+.top-aligned nav li:hover, .blog-id:hover{
+  background-color: rgba(231, 231, 231, .5);
+  padding: 0 5px;
+  border-radius: 5px;
 }
 .blog-id{
 
