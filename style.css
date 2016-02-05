@@ -165,7 +165,7 @@ nav li{
     transition: .25s ease-in-out;
 }
 
-.top-aligned nav li:hover, .blog-id:hover{
+.top-aligned nav li:hover{
   background-color: rgba(231, 231, 231, .5);
   padding: 0 5px;
   border-radius: 5px;
@@ -499,12 +499,18 @@ footer h2{
   font-size: 13px;
   letter-spacing: -.1px;
   color: rgba(162, 178, 191, 1);
+  transition: .25s ease-in-out;
 }
 .bottom-nav li:not(:last-child):after{
   content: "|";
   margin-left: 5px;
 }
-
+.bottom-nav li:hover a{
+  background-color: rgba(231, 231, 231, .5);
+  padding: 5px;
+  border-radius: 5px;
+  color: rgba(49, 49, 49, 1)
+}
 
 @media screen and (max-width: 768px) {
   article, aside, .bottom-post{
@@ -619,6 +625,7 @@ footer h2{
     margin: 0;
   }
   .bottom-nav ul li{
+
   }
   .bottom-nav a{
     font-size: 1.1rem;
